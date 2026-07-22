@@ -3,6 +3,8 @@ import 'package:finup_app/app/theme/app_colors.dart';
 import 'package:finup_app/core/constants/app_strings.dart';
 import 'package:finup_app/shared/widgets/app_header.dart';
 import 'package:finup_app/features/start/presentation/widgets/start_card.dart';
+import 'package:finup_app/shared/widgets/buttons/primary_button.dart';
+import 'package:finup_app/shared/widgets/buttons/secondary_button.dart';
 
 class StartPage extends StatelessWidget {
   const StartPage({super.key});
@@ -55,6 +57,25 @@ class StartPage extends StatelessWidget {
                     iconColor: AppColors.sharedGoalIcon,
                     iconBackgroundColor: AppColors.sharedGoalIconBackground,
                     title: AppStrings.startSharedGoalTitle,
+                  ),
+                ],
+              ),
+            ),
+            Padding(
+              padding: const EdgeInsets.fromLTRB(24, 0, 24, 24),
+              child: Column(
+                children: [
+                  PrimaryButton(
+                    text: AppStrings.createAccount,
+                    icon: Icons.arrow_forward,
+                    onPressed: () {},
+                  ),
+
+                  const SizedBox(height: 12),
+
+                  SecondaryButton(
+                    text: AppStrings.alreadyHaveAccount,
+                    onPressed: () {},
                   ),
                 ],
               ),

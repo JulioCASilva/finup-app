@@ -36,4 +36,6 @@ abstract final class AppColors {
   static const Color surface = Color(0xFFFFFFFF);
   static const Color cardBorder = Color(0xFFE7ECEA);
   static const Color shadow = Color(0xFF000000);
+
+  static const Color buttonSecondary = Color(0xFFEDF2F0);
 }

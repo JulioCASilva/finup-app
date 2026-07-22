@@ -14,4 +14,7 @@ abstract final class AppStrings {
   static const String startGoalsTitle = 'Organize suas metas';
   static const String startInvestmentsTitle = 'Planeje investimentos';
   static const String startSharedGoalTitle = 'Junte dinheiro com outros';
+
+  static const String createAccount = 'Criar conta';
+  static const String alreadyHaveAccount = 'Já tenho conta · Entrar';
 }
