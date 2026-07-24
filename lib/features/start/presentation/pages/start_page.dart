@@ -5,6 +5,7 @@ import 'package:finup_app/shared/widgets/app_header.dart';
 import 'package:finup_app/features/start/presentation/widgets/start_card.dart';
 import 'package:finup_app/shared/widgets/buttons/primary_button.dart';
 import 'package:finup_app/shared/widgets/buttons/secondary_button.dart';
+import 'package:finup_app/app/routes/app_routes.dart';
 
 class StartPage extends StatelessWidget {
   const StartPage({super.key});
@@ -68,14 +69,18 @@ class StartPage extends StatelessWidget {
                   PrimaryButton(
                     text: AppStrings.createAccount,
                     icon: Icons.arrow_forward,
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.pushNamed(context, AppRoutes.register);
+                    },
                   ),
 
                   const SizedBox(height: 12),
 
                   SecondaryButton(
                     text: AppStrings.alreadyHaveAccount,
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.pushNamed(context, AppRoutes.login);
+                    },
                   ),
                 ],
               ),
